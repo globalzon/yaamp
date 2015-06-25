@@ -12,6 +12,8 @@ You need three backend shells (in screen) running these scripts:
 	
 Start one stratum per algo using the run.sh script in the config folder, where the x11.conf is located as in:
 
-	stratum x11
+	stratumd x11
 
+
+More instructions comming as needed.
 
