@@ -14,7 +14,7 @@ Start one stratum per algo using the run.sh script in the config folder, where t
 
 	stratumd x11
 
-Your coin's config file needs to blocknotify their corresponding stratum using something like:
+All your coin's config files need to blocknotify their corresponding stratum using something like:
 
 	blocknotify=/root/bin/blocknotify yaamp.com:port coinid %s
 
