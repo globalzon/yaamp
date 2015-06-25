@@ -160,8 +160,7 @@ int main(int argc, char **argv)
 	strcpy(g_sql_host, iniparser_getstring(ini, "SQL:host", NULL));
 	strcpy(g_sql_database, iniparser_getstring(ini, "SQL:database", NULL));
 	strcpy(g_sql_username, iniparser_getstring(ini, "SQL:username", NULL));
-//	strcpy(g_sql_password, iniparser_getstring(ini, "SQL:password", NULL));
-	strcpy(g_sql_password, "zaratipo3");
+	strcpy(g_sql_password, iniparser_getstring(ini, "SQL:password", NULL));
 
 	strcpy(g_stratum_algo, iniparser_getstring(ini, "STRATUM:algo", NULL));
 	g_stratum_difficulty = iniparser_getdouble(ini, "STRATUM:difficulty", 16);
