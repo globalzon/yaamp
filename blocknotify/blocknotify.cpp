@@ -18,7 +18,7 @@
 #include <unistd.h>
 #include <pthread.h>
 
-// program yaamp.com:3433 coinid blockid
+// program yaamp.com:port coinid blockhash
 
 int main(int argc, char **argv)
 {
