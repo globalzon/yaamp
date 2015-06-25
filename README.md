@@ -18,6 +18,7 @@ Your coin's config file needs to blocknotify their corresponding stratum using s
 
 	blocknotify=/root/bin/blocknotify yaamp.com:port coinid %s
 
-
+On the website, go to http://server.com/site/frottedessus to login as admin. You have to change it to something different in the code (web/yaamp/modules/site/SiteController.php).
+	
 More instructions comming as needed.
 
