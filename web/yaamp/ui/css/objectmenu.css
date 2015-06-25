@@ -1,0 +1,27 @@
+
+.objectmenu-box
+{
+	position: absolute;
+	display: none;
+	border: 1px solid #778;
+	z-index: 10;
+	width: 640px;
+
+	background: white;
+	padding: 10px;
+}
+
+.embed-box
+{
+	position: absolute;
+	display: none;
+	border: 1px solid #778;
+	z-index: 10;
+	right: 0;
+	
+	background: white;
+	padding: 10px;
+}
+
+
+

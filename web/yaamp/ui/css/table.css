@@ -1,0 +1,124 @@
+
+table.dataGrid
+{
+	border-collapse: collapse;
+	width: 100%;
+	color: #555;
+}
+
+table.dataGrid a, table.dataGrid a:visited
+{
+	color: #306495;
+}
+
+table.dataGrid th, table.dataGrid td
+{
+	padding: 0.4em;
+}
+
+table.dataGrid th
+{
+	border-bottom: 1px solid #eee;
+	background-color: #eee;
+	/*color: #555;*/
+}
+
+table.dataGrid tbody
+{
+	border: 1px solid #eee;
+}
+
+table.dataGrid td
+{
+	border-bottom: 1px solid #eee;
+}
+
+table.dataGrid tr.bold
+{
+	font-weight: bold;
+}
+
+/**********************************************/
+
+table.dataGrid2
+{
+	border-collapse: collapse;
+	width: 100%;
+	color: #555;
+}
+
+/*table.dataGrid2 a, table.dataGrid2 a:visited
+{
+	color: #306495;
+}*/
+
+table.dataGrid2 th, table.dataGrid2 td
+{
+	padding: 0.4em;
+	margin: 0.1em;
+}
+
+table.dataGrid2 th
+{
+}
+
+table.dataGrid2 tbody
+{
+	border: 1px solid #eee;
+}
+
+table.dataGrid2 td
+{
+	border-bottom: 1px solid #eee;
+}
+
+table.dataGrid2 thead tr .header {
+/*	background-image: url(/images/ui/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;*/
+	cursor: pointer;
+}
+
+table.dataGrid2 thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+
+table.dataGrid2 thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+
+/*table.dataGrid thead tr .headerSortDown, table.dataGrid thead tr .headerSortUp {
+	background-color: #D2E3FB;
+}*/
+
+/**********************************************/
+table.reportgrid1
+{
+	background: white;
+	border-collapse: collapse;
+}
+
+table.reportgrid1 th, table.reportgrid1 td
+{
+	font-size: 0.9em;
+	padding: 0.2em;
+}
+
+table.reportgrid1 th
+{
+	background: #eaeaea;
+	text-align: left;
+	padding: .5em 0.4em .5em 0.4em;
+}
+
+table.reportgrid1 tr.odd
+{
+	background: #F5F5F5;
+}
+
+table.reportgrid1 tr.bold
+{
+	font-weight: bold;
+}
+
+
