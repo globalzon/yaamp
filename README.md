@@ -27,7 +27,7 @@ If you use apache, it should be something like:
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*) index.php?r=$1 [QSA]
 
-Recommended install folder for the stratum engine is in /var/stratum. Copy all the .conf files, run.sh, the stratum binary and the blocknotify binary to this folder. 
+The recommended install folder for the stratum engine is /var/stratum. Copy all the .conf files, run.sh, the stratum binary and the blocknotify binary to this folder. 
 
 Some scripts are expecting the web folder to be /var/web. 
 
