@@ -20,14 +20,16 @@ Config for nginx:
 		include fastcgi_params;
 	}
 
-Apache should be something like:
+If you use apache should be something like:
 
 	RewriteEngine on
 
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*) index.php?r=$1 [QSA]
 
-Recommended install folder for the stratum engine is in /var/stratum. Copy all the .conf files, run.sh, the stratum binary and the blocknotify binary to this folder. Some scripts are expecting the web folder to be /var/web. 
+Recommended install folder for the stratum engine is in /var/stratum. Copy all the .conf files, run.sh, the stratum binary and the blocknotify binary to this folder. 
+
+Some scripts are expecting the web folder to be /var/web. 
 
 Add your exchange API keys in:
 
@@ -41,13 +43,13 @@ You need three backend shells (in screen) running these scripts:
 	web/loop2.sh
 	web/block.sh
 
-Start one stratum per algo using the run.sh script in the config folder, where the x11.conf is located as in:
+Start one stratum per algo using the run.sh script with the algo as parameter. For example, for x11:
 
-	stratum x11
+	run.sh x11
 
 Edit each .conf file with proper values.
 
-Look at rc.local, it starts all three backend shells and all stratum processes.
+Look at rc.local, it starts all three backend shells and all stratum processes. Copy it to the /etc folder so that all screen shells are started at boot up.
 
 All your coin's config files need to blocknotify their corresponding stratum using something like:
 
