@@ -20,7 +20,7 @@ Config for nginx:
 		include fastcgi_params;
 	}
 
-If you use apache should be something like:
+If you use apache, it should be something like:
 
 	RewriteEngine on
 
