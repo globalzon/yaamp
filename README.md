@@ -2,7 +2,7 @@
 
 Required:
 
-	memcached
+	linux, mysql, php, web engine, memcached
 
 Config for nginx:
 
@@ -35,6 +35,8 @@ Add your exchange API keys in:
 
 	web/yaamp/core/exchange/*
 
+Look at web/yaamp/core/trading/ there are a few place where there're hardcoded withdraw BTC address (cryptsy, bittrex and bleutrade).
+
 Edit web/serverconfig.php
 
 You need three backend shells (in screen) running these scripts:
@@ -57,7 +59,12 @@ All your coin's config files need to blocknotify their corresponding stratum usi
 
 On the website, go to http://server.com/site/frottedessus to login as admin. You have to change it to something different in the code (web/yaamp/modules/site/SiteController.php).
 
+There are logs generated in the /var/stratum folder and /var/log/stratum/debug.log for the php log.
 
 More instructions coming as needed.
+
+There a lot of unused code in the php branch. Lot come from other projects I worked on and I've been lazy to clean it up before to integrate it to yaamp. It's mostly based on the Yii framework which implements a lightweight MVC.
+
+	http://www.yiiframework.com/
 
 
