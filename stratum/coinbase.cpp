@@ -97,7 +97,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 	sprintf(templ->coinb2, "%s00000000", script2);
 	json_int_t available = templ->value;
 
-	if(strcmp(coind->symbol, "DRK") == 0 || strcmp(coind->symbol, "DASH") == 0)
+	if(strcmp(coind->symbol, "DRK") == 0 || strcmp(coind->symbol, "DASH") == 0 || strcmp(coind->symbol, "BOD") == 0)
 //	if(strcmp(coind->symbol, "DRK") == 0)
 	{
 		char charity_payee[1024] = "";
